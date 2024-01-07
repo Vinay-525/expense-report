@@ -1,0 +1,2598 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>expensereportflow</internal_name>
+        <label_cache>[{"name":"635d64e8-38b0-4be9-bbde-fb139094f92f.record.state","label":"4 - Update Record➛expense_report_req_item Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"state","choices":[{"used":false,"label":"Requested","image":"","rawLabel":"Requested","selected":false,"missing":false,"reference":false,"value":"10","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Awaiting Approval","image":"","rawLabel":"Awaiting Approval","selected":false,"missing":false,"reference":false,"value":"11","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Awaiting Feedback","image":"","rawLabel":"Awaiting Feedback","selected":false,"missing":false,"reference":false,"value":"12","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Partially Approved","image":"","rawLabel":"Partially Approved","selected":false,"missing":false,"reference":false,"value":"13","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Approved","image":"","rawLabel":"Approved","selected":false,"missing":false,"reference":false,"value":"14","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Closed Complete","image":"","rawLabel":"Closed Complete","selected":false,"missing":false,"reference":false,"value":"3","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Rejected","image":"","rawLabel":"Rejected","selected":false,"missing":false,"reference":false,"value":"16","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}}]},{"name":"e4ab9e17-2b21-4b2b-a8fd-cc5070e2d63f.approval_state","label":"5 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"635d64e8-38b0-4be9-bbde-fb139094f92f.record.assignment_group","label":"4 - Update Record➛expense_report_req_item Record➛Assignment group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"assignment_group"},{"name":"635d64e8-38b0-4be9-bbde-fb139094f92f.record","label":"4 - Update Record➛expense_report_req_item Record","reference":"x_1288340_exp_rep_expense_report_req_item","reference_display":"expense_report_req_item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛expense_report_req_item Record","reference":"x_1288340_exp_rep_expense_report_req_item","reference_display":"expense_report_req_item","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.requested_for.manager","label":"Trigger - Record Created➛expense_report_req_item Record➛Requested For➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record","label":"1 - Update Record➛expense_report_req_item Record","reference":"x_1288340_exp_rep_expense_report_req_item","reference_display":"expense_report_req_item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for","label":"1 - Update Record➛expense_report_req_item Record➛Requested For","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"requested_for"},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for.manager","label":"1 - Update Record➛expense_report_req_item Record➛Requested For➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"f7196e08-4b89-427d-bee0-580d023b4ebb.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>23aaca29932731107313f24efaba10d0</master_snapshot>
+        <name>Expense.Report.Flow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>c4ba0e29932731107313f24efaba109c</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:41:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e3088a25932731107313f24efaba100e</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Expense.Report.Flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Expense Report" source="x_1288340_exp_rep">21effda993e331107313f24efaba10cd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_update_name>sys_hub_flow_e3088a25932731107313f24efaba100e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:16</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=e3088a25932731107313f24efaba100e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e3088a25932731107313f24efaba100e"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1288340_exp_rep_expense_report_req_item">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c4ba0e29932731107313f24efaba109c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:07</sys_updated_on>
+        <table>x_1288340_exp_rep_expense_report_req_item</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>e3088a25932731107313f24efaba100e</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 10:10:15</sys_created_on>
+        <sys_id>4f9e826d932731107313f24efaba1007</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:15</sys_updated_on>
+        <trigger display_value="">c4ba0e29932731107313f24efaba109c</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=e3088a25932731107313f24efaba100e^sys_idNOT IN4f9e826d932731107313f24efaba1007"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=e3088a25932731107313f24efaba100e^sys_idNOT INe2e94ee5932731107313f24efaba1038"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>e2e94ee5932731107313f24efaba1038</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:16</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e2e94ee5932731107313f24efaba1038"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>e2e94ee5932731107313f24efaba1038</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>2ae94ee5932731107313f24efaba1039</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <value>x_1288340_exp_rep_expense_report_req_item</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>e2e94ee5932731107313f24efaba1038</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>62e94ee5932731107313f24efaba1039</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e3088a25932731107313f24efaba100e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e3088a25932731107313f24efaba100e^sys_idNOT INef088a25932731107313f24efaba100e"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e3088a25932731107313f24efaba100e</id>
+        <name>Expense.Report.Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:41:37</sys_created_on>
+        <sys_id>ef088a25932731107313f24efaba100e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:41:37</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=ef088a25932731107313f24efaba100e"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e3088a25932731107313f24efaba100e^sys_idNOT IN2ae94ee5932731107313f24efaba102f,aae94ee5932731107313f24efaba1033"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</model>
+        <model_id>e3088a25932731107313f24efaba100e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e3088a25932731107313f24efaba100e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>2ae94ee5932731107313f24efaba102f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</model>
+        <model_id>e3088a25932731107313f24efaba100e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e3088a25932731107313f24efaba100e</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>aae94ee5932731107313f24efaba1033</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=e3088a25932731107313f24efaba100e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e3088a25932731107313f24efaba100e"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=e3088a25932731107313f24efaba100e^sys_idNOT IN2ee94ee5932731107313f24efaba1046,a2e94ee5932731107313f24efaba1053,aae94ee5932731107313f24efaba103e,aae94ee5932731107313f24efaba105b,cd9a0a29932731107313f24efaba1036,d19a0a29932731107313f24efaba104a,d99a0a29932731107313f24efaba1041"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>2ee94ee5932731107313f24efaba1046</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>adela.cervantsz</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:11:09</sys_updated_on>
+        <ui_id>f7196e08-4b89-427d-bee0-580d023b4ebb</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2ee94ee5932731107313f24efaba1046"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2ee94ee5932731107313f24efaba1046</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>2ae94ee5932731107313f24efaba1049</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2ee94ee5932731107313f24efaba1046</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>62e94ee5932731107313f24efaba104a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <value>x_1288340_exp_rep_expense_report_req_item</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2ee94ee5932731107313f24efaba1046</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>aee94ee5932731107313f24efaba1049</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2ee94ee5932731107313f24efaba1046</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>eae94ee5932731107313f24efaba1049</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2ee94ee5932731107313f24efaba1046"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>2ee94ee5932731107313f24efaba1046</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>e2e94ee5932731107313f24efaba1049</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesRejectsAnyU[{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for.manager}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>2ee94ee5932731107313f24efaba1046</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>e6e94ee5932731107313f24efaba1048</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>2ee94ee5932731107313f24efaba1046</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>22e94ee5932731107313f24efaba1049</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>2ee94ee5932731107313f24efaba1046</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>aae94ee5932731107313f24efaba1048</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>2ee94ee5932731107313f24efaba1046</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>6ee94ee5932731107313f24efaba1048</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>2ee94ee5932731107313f24efaba1046</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>a6e94ee5932731107313f24efaba1049</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2ee94ee5932731107313f24efaba1046"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2ee94ee5932731107313f24efaba1046"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
+        <order>4</order>
+        <parent_ui_id>477a0727-143e-4a87-bfe2-ed87cfa86381</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>a2e94ee5932731107313f24efaba1053</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>adela.cervantsz</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:11:09</sys_updated_on>
+        <ui_id>635d64e8-38b0-4be9-bbde-fb139094f92f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a2e94ee5932731107313f24efaba1053"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a2e94ee5932731107313f24efaba1053</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>aee94ee5932731107313f24efaba1054</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <value>x_1288340_exp_rep_expense_report_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a2e94ee5932731107313f24efaba1053</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>eae94ee5932731107313f24efaba1054</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <value>state=13^assignment_group={"display":"Finance Dept","value":"22e421ed936331107313f24efaba10b7","sys_id":"22e421ed936331107313f24efaba10b7"}^approval=requested</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a2e94ee5932731107313f24efaba1053"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>a2e94ee5932731107313f24efaba1053</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>6ae94ee5932731107313f24efaba1054</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>a2e94ee5932731107313f24efaba1053</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>e2e94ee5932731107313f24efaba1054</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>a2e94ee5932731107313f24efaba1053</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>a6e94ee5932731107313f24efaba1054</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a2e94ee5932731107313f24efaba1053"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a2e94ee5932731107313f24efaba1053"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>aae94ee5932731107313f24efaba103e</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>adela.cervantsz</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:11:09</sys_updated_on>
+        <ui_id>bf9c316a-123b-4cb2-8dc1-a9e61577cb4b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=aae94ee5932731107313f24efaba103e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>aae94ee5932731107313f24efaba103e</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>66e94ee5932731107313f24efaba1041</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <value>x_1288340_exp_rep_expense_report_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=aae94ee5932731107313f24efaba103e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>aae94ee5932731107313f24efaba103e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>e2e94ee5932731107313f24efaba1041</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>aae94ee5932731107313f24efaba103e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>6ae94ee5932731107313f24efaba1040</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>aae94ee5932731107313f24efaba103e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>22e94ee5932731107313f24efaba1041</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>state=11^assigned_to={{Created_1.current.requested_for.manager}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=aae94ee5932731107313f24efaba103e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=aae94ee5932731107313f24efaba103e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
+        <order>11</order>
+        <parent_ui_id>8acedf5a-ce39-4447-9fff-54af4772f27a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>aae94ee5932731107313f24efaba105b</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>adela.cervantsz</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:11:09</sys_updated_on>
+        <ui_id>0f73c0a1-1e07-4776-9d50-59894cbdc4cd</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=aae94ee5932731107313f24efaba105b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>aae94ee5932731107313f24efaba105b</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>a6e94ee5932731107313f24efaba105d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <value>x_1288340_exp_rep_expense_report_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>aae94ee5932731107313f24efaba105b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>e2e94ee5932731107313f24efaba105d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <value>state=16</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=aae94ee5932731107313f24efaba105b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>aae94ee5932731107313f24efaba105b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>62e94ee5932731107313f24efaba105d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>aae94ee5932731107313f24efaba105b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>eae94ee5932731107313f24efaba105c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>aae94ee5932731107313f24efaba105b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>aee94ee5932731107313f24efaba105c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=aae94ee5932731107313f24efaba105b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=aae94ee5932731107313f24efaba105b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
+        <order>5</order>
+        <parent_ui_id>477a0727-143e-4a87-bfe2-ed87cfa86381</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>cd9a0a29932731107313f24efaba1036</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>adela.cervantsz</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:11:09</sys_updated_on>
+        <ui_id>e4ab9e17-2b21-4b2b-a8fd-cc5070e2d63f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cd9a0a29932731107313f24efaba1036"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cd9a0a29932731107313f24efaba1036</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>119a0a29932731107313f24efaba103a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <value>x_1288340_exp_rep_expense_report_req_item</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cd9a0a29932731107313f24efaba1036</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>5d9a0a29932731107313f24efaba1039</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cd9a0a29932731107313f24efaba1036</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>999a0a29932731107313f24efaba1039</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cd9a0a29932731107313f24efaba1036</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>d59a0a29932731107313f24efaba1039</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=cd9a0a29932731107313f24efaba1036"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>cd9a0a29932731107313f24efaba1036</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>919a0a29932731107313f24efaba1039</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesRejectsAnyG[{{635d64e8-38b0-4be9-bbde-fb139094f92f.record.assignment_group}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>cd9a0a29932731107313f24efaba1036</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>959a0a29932731107313f24efaba1038</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>cd9a0a29932731107313f24efaba1036</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>dd9a0a29932731107313f24efaba1038</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>cd9a0a29932731107313f24efaba1036</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>599a0a29932731107313f24efaba1038</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>cd9a0a29932731107313f24efaba1036</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>1d9a0a29932731107313f24efaba1038</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{635d64e8-38b0-4be9-bbde-fb139094f92f.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>cd9a0a29932731107313f24efaba1036</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>559a0a29932731107313f24efaba1039</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cd9a0a29932731107313f24efaba1036"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cd9a0a29932731107313f24efaba1036"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
+        <order>9</order>
+        <parent_ui_id>4b6b0f32-29f7-4b3d-9209-647e188d128c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>d19a0a29932731107313f24efaba104a</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>adela.cervantsz</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:11:09</sys_updated_on>
+        <ui_id>824a45c6-36f5-43f4-b363-774d102fccdb</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d19a0a29932731107313f24efaba104a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d19a0a29932731107313f24efaba104a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>1d9a0a29932731107313f24efaba104b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <value>state=16</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d19a0a29932731107313f24efaba104a</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>dd9a0a29932731107313f24efaba104b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <value>x_1288340_exp_rep_expense_report_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d19a0a29932731107313f24efaba104a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d19a0a29932731107313f24efaba104a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>999a0a29932731107313f24efaba104b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{635d64e8-38b0-4be9-bbde-fb139094f92f.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d19a0a29932731107313f24efaba104a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>159a0a29932731107313f24efaba104b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>d19a0a29932731107313f24efaba104a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>d59a0a29932731107313f24efaba104b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d19a0a29932731107313f24efaba104a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d19a0a29932731107313f24efaba104a"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
+        <order>7</order>
+        <parent_ui_id>8c13693e-cbad-470f-84c5-23f8f0a71d66</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>d99a0a29932731107313f24efaba1041</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>adela.cervantsz</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:11:09</sys_updated_on>
+        <ui_id>e88d9eaa-a39b-4052-90d3-3d8040355983</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d99a0a29932731107313f24efaba1041"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d99a0a29932731107313f24efaba1041</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>159a0a29932731107313f24efaba1043</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <value>state=14</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d99a0a29932731107313f24efaba1041</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>d59a0a29932731107313f24efaba1043</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <value>x_1288340_exp_rep_expense_report_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d99a0a29932731107313f24efaba1041"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d99a0a29932731107313f24efaba1041</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>919a0a29932731107313f24efaba1043</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{635d64e8-38b0-4be9-bbde-fb139094f92f.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d99a0a29932731107313f24efaba1041</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>1d9a0a29932731107313f24efaba1042</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>d99a0a29932731107313f24efaba1041</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>dd9a0a29932731107313f24efaba1042</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d99a0a29932731107313f24efaba1041"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d99a0a29932731107313f24efaba1041"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=e3088a25932731107313f24efaba100e"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=e3088a25932731107313f24efaba100e^sys_idNOT IN6ae94ee5932731107313f24efaba1055,919a0a29932731107313f24efaba1044,a2e94ee5932731107313f24efaba104b,d99a0a29932731107313f24efaba103a"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">a2e94ee5932731107313f24efaba1055</block>
+        <comment/>
+        <connected_to>477a0727-143e-4a87-bfe2-ed87cfa86381</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>6ae94ee5932731107313f24efaba1055</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:16</sys_updated_on>
+        <ui_id>8acedf5a-ce39-4447-9fff-54af4772f27a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6ae94ee5932731107313f24efaba1055"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6ae94ee5932731107313f24efaba1055"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6ae94ee5932731107313f24efaba1055"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">d99a0a29932731107313f24efaba1043</block>
+        <comment/>
+        <connected_to>8c13693e-cbad-470f-84c5-23f8f0a71d66</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>477a0727-143e-4a87-bfe2-ed87cfa86381</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>919a0a29932731107313f24efaba1044</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:16</sys_updated_on>
+        <ui_id>4b6b0f32-29f7-4b3d-9209-647e188d128c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=919a0a29932731107313f24efaba1044"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=919a0a29932731107313f24efaba1044"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=919a0a29932731107313f24efaba1044"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">e6e94ee5932731107313f24efaba104a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>a2e94ee5932731107313f24efaba104b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:16</sys_updated_on>
+        <ui_id>477a0727-143e-4a87-bfe2-ed87cfa86381</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a2e94ee5932731107313f24efaba104b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a2e94ee5932731107313f24efaba104b</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>2ee94ee5932731107313f24efaba104e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <value>If Manager Approved The Expense Request</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a2e94ee5932731107313f24efaba104b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>a2e94ee5932731107313f24efaba104b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>aae94ee5932731107313f24efaba104e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{f7196e08-4b89-427d-bee0-580d023b4ebb.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>a2e94ee5932731107313f24efaba104b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>e6e94ee5932731107313f24efaba104e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=a2e94ee5932731107313f24efaba104b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a2e94ee5932731107313f24efaba104b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">159a0a29932731107313f24efaba103a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>477a0727-143e-4a87-bfe2-ed87cfa86381</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>d99a0a29932731107313f24efaba103a</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:16</sys_updated_on>
+        <ui_id>8c13693e-cbad-470f-84c5-23f8f0a71d66</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d99a0a29932731107313f24efaba103a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>d99a0a29932731107313f24efaba103a</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>599a0a29932731107313f24efaba103d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <value>If Finance Dept Approved</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d99a0a29932731107313f24efaba103a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>d99a0a29932731107313f24efaba103a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>d59a0a29932731107313f24efaba103d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{e4ab9e17-2b21-4b2b-a8fd-cc5070e2d63f.approval_state}}=approved^{{635d64e8-38b0-4be9-bbde-fb139094f92f.record.state}}=13</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>d99a0a29932731107313f24efaba103a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:52:39</sys_created_on>
+        <sys_id>159a0a29932731107313f24efaba103d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:52:39</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=d99a0a29932731107313f24efaba103a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d99a0a29932731107313f24efaba103a"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e3088a25932731107313f24efaba100e"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e3088a25932731107313f24efaba100e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e3088a25932731107313f24efaba100e^sys_idNOT INeae94ee5932731107313f24efaba1032,eee94ee5932731107313f24efaba1035"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e3088a25932731107313f24efaba100e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>eae94ee5932731107313f24efaba1032</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Report" source="x_1288340_exp_rep">21effda993e331107313f24efaba10cd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e3088a25932731107313f24efaba100e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:49:44</sys_created_on>
+        <sys_id>eee94ee5932731107313f24efaba1035</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Report" source="x_1288340_exp_rep">21effda993e331107313f24efaba10cd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:49:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e3088a25932731107313f24efaba100e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_e3088a25932731107313f24efaba100e"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e3088a25932731107313f24efaba100e"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>expensereportflow</internal_name>
+        <label_cache>[{"name":"635d64e8-38b0-4be9-bbde-fb139094f92f.record.state","label":"4 - Update Record➛expense_report_req_item Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"state","choices":[{"used":false,"label":"Requested","image":"","rawLabel":"Requested","selected":false,"missing":false,"reference":false,"value":"10","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Awaiting Approval","image":"","rawLabel":"Awaiting Approval","selected":false,"missing":false,"reference":false,"value":"11","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Awaiting Feedback","image":"","rawLabel":"Awaiting Feedback","selected":false,"missing":false,"reference":false,"value":"12","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Partially Approved","image":"","rawLabel":"Partially Approved","selected":false,"missing":false,"reference":false,"value":"13","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Approved","image":"","rawLabel":"Approved","selected":false,"missing":false,"reference":false,"value":"14","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Closed Complete","image":"","rawLabel":"Closed Complete","selected":false,"missing":false,"reference":false,"value":"3","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Rejected","image":"","rawLabel":"Rejected","selected":false,"missing":false,"reference":false,"value":"16","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}}]},{"name":"e4ab9e17-2b21-4b2b-a8fd-cc5070e2d63f.approval_state","label":"5 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"635d64e8-38b0-4be9-bbde-fb139094f92f.record.assignment_group","label":"4 - Update Record➛expense_report_req_item Record➛Assignment group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"assignment_group"},{"name":"635d64e8-38b0-4be9-bbde-fb139094f92f.record","label":"4 - Update Record➛expense_report_req_item Record","reference":"x_1288340_exp_rep_expense_report_req_item","reference_display":"expense_report_req_item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛expense_report_req_item Record","reference":"x_1288340_exp_rep_expense_report_req_item","reference_display":"expense_report_req_item","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.requested_for.manager","label":"Trigger - Record Created➛expense_report_req_item Record➛Requested For➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record","label":"1 - Update Record➛expense_report_req_item Record","reference":"x_1288340_exp_rep_expense_report_req_item","reference_display":"expense_report_req_item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for","label":"1 - Update Record➛expense_report_req_item Record➛Requested For","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"requested_for"},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for.manager","label":"1 - Update Record➛expense_report_req_item Record➛Requested For➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"f7196e08-4b89-427d-bee0-580d023b4ebb.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Expense.Report.Flow</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>23aaca29932731107313f24efaba10d0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=23aaca29932731107313f24efaba10d0"/>
+    <sys_variable_value action="delete_multiple" query="document_key=23aaca29932731107313f24efaba10d0"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=23aaca29932731107313f24efaba10d0^sys_idNOT IN00ba0e29932731107313f24efaba1043"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:07</sys_created_on>
+        <sys_id>00ba0e29932731107313f24efaba1043</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:15</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=00ba0e29932731107313f24efaba1043"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>00ba0e29932731107313f24efaba1043</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:07</sys_created_on>
+        <sys_id>08ba0e29932731107313f24efaba1044</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:07</sys_updated_on>
+        <value>x_1288340_exp_rep_expense_report_req_item</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>00ba0e29932731107313f24efaba1043</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:07</sys_created_on>
+        <sys_id>44ba0e29932731107313f24efaba1044</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:07</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=23aaca29932731107313f24efaba10d0"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=23aaca29932731107313f24efaba10d0^sys_idNOT IN23aaca29932731107313f24efaba10d1"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>23aaca29932731107313f24efaba10d0</id>
+        <name>Expense.Report.Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:05</sys_created_on>
+        <sys_id>23aaca29932731107313f24efaba10d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:05</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=23aaca29932731107313f24efaba10d1"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=23aaca29932731107313f24efaba10d0^sys_idNOT IN37aaca29932731107313f24efaba10eb,67aaca29932731107313f24efaba10d2"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</model>
+        <model_id>23aaca29932731107313f24efaba10d0</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_23aaca29932731107313f24efaba10d0</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>37aaca29932731107313f24efaba10eb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</model>
+        <model_id>23aaca29932731107313f24efaba10d0</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_23aaca29932731107313f24efaba10d0</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:05</sys_created_on>
+        <sys_id>67aaca29932731107313f24efaba10d2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=23aaca29932731107313f24efaba10d0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=23aaca29932731107313f24efaba10d0"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=23aaca29932731107313f24efaba10d0^sys_idNOT IN00ba0e29932731107313f24efaba1041,33aa0e29932731107313f24efaba1016,33aa0e29932731107313f24efaba1035,33aa0e29932731107313f24efaba103b,3baa0e29932731107313f24efaba1026,f3aa0e29932731107313f24efaba101f,fbaa0e29932731107313f24efaba102d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
+        <order>11</order>
+        <parent_ui_id>8acedf5a-ce39-4447-9fff-54af4772f27a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:07</sys_created_on>
+        <sys_id>00ba0e29932731107313f24efaba1041</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <ui_id>0f73c0a1-1e07-4776-9d50-59894cbdc4cd</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=00ba0e29932731107313f24efaba1041"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>00ba0e29932731107313f24efaba1041</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:07</sys_created_on>
+        <sys_id>0cba0e29932731107313f24efaba1042</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:07</sys_updated_on>
+        <value>x_1288340_exp_rep_expense_report_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>00ba0e29932731107313f24efaba1041</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:07</sys_created_on>
+        <sys_id>48ba0e29932731107313f24efaba1042</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:07</sys_updated_on>
+        <value>state=16</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=00ba0e29932731107313f24efaba1041"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>00ba0e29932731107313f24efaba1041</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:07</sys_created_on>
+        <sys_id>c4ba0e29932731107313f24efaba1042</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>00ba0e29932731107313f24efaba1041</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:07</sys_created_on>
+        <sys_id>40ba0e29932731107313f24efaba1042</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>00ba0e29932731107313f24efaba1041</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:07</sys_created_on>
+        <sys_id>04ba0e29932731107313f24efaba1042</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=00ba0e29932731107313f24efaba1041"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=00ba0e29932731107313f24efaba1041"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>33aa0e29932731107313f24efaba1016</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <ui_id>bf9c316a-123b-4cb2-8dc1-a9e61577cb4b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=33aa0e29932731107313f24efaba1016"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>33aa0e29932731107313f24efaba1016</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>7baa0e29932731107313f24efaba1017</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <value>x_1288340_exp_rep_expense_report_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=33aa0e29932731107313f24efaba1016"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>33aa0e29932731107313f24efaba1016</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>f7aa0e29932731107313f24efaba1017</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>33aa0e29932731107313f24efaba1016</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>73aa0e29932731107313f24efaba1017</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>33aa0e29932731107313f24efaba1016</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>37aa0e29932731107313f24efaba1017</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>state=11^assigned_to={{Created_1.current.requested_for.manager}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=33aa0e29932731107313f24efaba1016"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=33aa0e29932731107313f24efaba1016"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
+        <order>7</order>
+        <parent_ui_id>8c13693e-cbad-470f-84c5-23f8f0a71d66</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>33aa0e29932731107313f24efaba1035</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <ui_id>e88d9eaa-a39b-4052-90d3-3d8040355983</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=33aa0e29932731107313f24efaba1035"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>33aa0e29932731107313f24efaba1035</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>3faa0e29932731107313f24efaba1036</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <value>x_1288340_exp_rep_expense_report_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>33aa0e29932731107313f24efaba1035</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>7baa0e29932731107313f24efaba1036</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <value>state=14</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=33aa0e29932731107313f24efaba1035"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>33aa0e29932731107313f24efaba1035</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>f7aa0e29932731107313f24efaba1036</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{635d64e8-38b0-4be9-bbde-fb139094f92f.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>33aa0e29932731107313f24efaba1035</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>73aa0e29932731107313f24efaba1036</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>33aa0e29932731107313f24efaba1035</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>37aa0e29932731107313f24efaba1036</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=33aa0e29932731107313f24efaba1035"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=33aa0e29932731107313f24efaba1035"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
+        <order>9</order>
+        <parent_ui_id>4b6b0f32-29f7-4b3d-9209-647e188d128c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>33aa0e29932731107313f24efaba103b</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <ui_id>824a45c6-36f5-43f4-b363-774d102fccdb</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=33aa0e29932731107313f24efaba103b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>33aa0e29932731107313f24efaba103b</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>0cba0e29932731107313f24efaba103c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <value>x_1288340_exp_rep_expense_report_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>33aa0e29932731107313f24efaba103b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>48ba0e29932731107313f24efaba103c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <value>state=16</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=33aa0e29932731107313f24efaba103b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>33aa0e29932731107313f24efaba103b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>c4ba0e29932731107313f24efaba103c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{635d64e8-38b0-4be9-bbde-fb139094f92f.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>33aa0e29932731107313f24efaba103b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>40ba0e29932731107313f24efaba103c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>33aa0e29932731107313f24efaba103b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>04ba0e29932731107313f24efaba103c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=33aa0e29932731107313f24efaba103b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=33aa0e29932731107313f24efaba103b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
+        <order>4</order>
+        <parent_ui_id>477a0727-143e-4a87-bfe2-ed87cfa86381</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>3baa0e29932731107313f24efaba1026</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <ui_id>635d64e8-38b0-4be9-bbde-fb139094f92f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3baa0e29932731107313f24efaba1026"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3baa0e29932731107313f24efaba1026</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>37aa0e29932731107313f24efaba1028</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <value>x_1288340_exp_rep_expense_report_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3baa0e29932731107313f24efaba1026</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>73aa0e29932731107313f24efaba1028</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <value>state=13^assignment_group={"display":"Finance Dept","value":"22e421ed936331107313f24efaba10b7","sys_id":"22e421ed936331107313f24efaba10b7"}^approval=requested</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3baa0e29932731107313f24efaba1026"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>3baa0e29932731107313f24efaba1026</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>ffaa0e29932731107313f24efaba1027</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>3baa0e29932731107313f24efaba1026</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>7baa0e29932731107313f24efaba1027</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>3baa0e29932731107313f24efaba1026</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>3faa0e29932731107313f24efaba1027</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3baa0e29932731107313f24efaba1026"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3baa0e29932731107313f24efaba1026"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>f3aa0e29932731107313f24efaba101f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <ui_id>f7196e08-4b89-427d-bee0-580d023b4ebb</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f3aa0e29932731107313f24efaba101f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f3aa0e29932731107313f24efaba101f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>37aa0e29932731107313f24efaba1022</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <value>x_1288340_exp_rep_expense_report_req_item</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f3aa0e29932731107313f24efaba101f</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>73aa0e29932731107313f24efaba1022</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f3aa0e29932731107313f24efaba101f</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>bfaa0e29932731107313f24efaba1021</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f3aa0e29932731107313f24efaba101f</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>fbaa0e29932731107313f24efaba1021</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f3aa0e29932731107313f24efaba101f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>f3aa0e29932731107313f24efaba101f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>b7aa0e29932731107313f24efaba1021</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesRejectsAnyU[{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for.manager}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>f3aa0e29932731107313f24efaba101f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>bbaa0e29932731107313f24efaba1020</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>f3aa0e29932731107313f24efaba101f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>f3aa0e29932731107313f24efaba1021</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>f3aa0e29932731107313f24efaba101f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>7faa0e29932731107313f24efaba1020</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>f3aa0e29932731107313f24efaba101f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>33aa0e29932731107313f24efaba1021</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>f3aa0e29932731107313f24efaba101f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>7baa0e29932731107313f24efaba1021</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f3aa0e29932731107313f24efaba101f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f3aa0e29932731107313f24efaba101f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
+        <order>5</order>
+        <parent_ui_id>477a0727-143e-4a87-bfe2-ed87cfa86381</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>fbaa0e29932731107313f24efaba102d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <ui_id>e4ab9e17-2b21-4b2b-a8fd-cc5070e2d63f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fbaa0e29932731107313f24efaba102d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fbaa0e29932731107313f24efaba102d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>3faa0e29932731107313f24efaba1030</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <value>x_1288340_exp_rep_expense_report_req_item</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fbaa0e29932731107313f24efaba102d</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>7baa0e29932731107313f24efaba1030</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fbaa0e29932731107313f24efaba102d</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>b7aa0e29932731107313f24efaba1030</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fbaa0e29932731107313f24efaba102d</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>f3aa0e29932731107313f24efaba1030</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=fbaa0e29932731107313f24efaba102d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>fbaa0e29932731107313f24efaba102d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>bfaa0e29932731107313f24efaba102f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesRejectsAnyG[{{635d64e8-38b0-4be9-bbde-fb139094f92f.record.assignment_group}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>fbaa0e29932731107313f24efaba102d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>b3aa0e29932731107313f24efaba102f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>fbaa0e29932731107313f24efaba102d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>fbaa0e29932731107313f24efaba102f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>fbaa0e29932731107313f24efaba102d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>77aa0e29932731107313f24efaba102f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>fbaa0e29932731107313f24efaba102d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>3baa0e29932731107313f24efaba102f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{635d64e8-38b0-4be9-bbde-fb139094f92f.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>fbaa0e29932731107313f24efaba102d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>73aa0e29932731107313f24efaba1030</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fbaa0e29932731107313f24efaba102d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fbaa0e29932731107313f24efaba102d"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=23aaca29932731107313f24efaba10d0"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=23aaca29932731107313f24efaba10d0^sys_idNOT IN7baaca29932731107313f24efaba10fe,f7aa0e29932731107313f24efaba1001,fbaaca29932731107313f24efaba10f6,ffaaca29932731107313f24efaba10fa"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">d99a0a29932731107313f24efaba1043</block>
+        <comment/>
+        <connected_to>8c13693e-cbad-470f-84c5-23f8f0a71d66</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>477a0727-143e-4a87-bfe2-ed87cfa86381</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>7baaca29932731107313f24efaba10fe</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <ui_id>4b6b0f32-29f7-4b3d-9209-647e188d128c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7baaca29932731107313f24efaba10fe"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7baaca29932731107313f24efaba10fe"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7baaca29932731107313f24efaba10fe"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">a2e94ee5932731107313f24efaba1055</block>
+        <comment/>
+        <connected_to>477a0727-143e-4a87-bfe2-ed87cfa86381</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>f7aa0e29932731107313f24efaba1001</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <ui_id>8acedf5a-ce39-4447-9fff-54af4772f27a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f7aa0e29932731107313f24efaba1001"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f7aa0e29932731107313f24efaba1001"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f7aa0e29932731107313f24efaba1001"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">e6e94ee5932731107313f24efaba104a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>fbaaca29932731107313f24efaba10f6</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <ui_id>477a0727-143e-4a87-bfe2-ed87cfa86381</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=fbaaca29932731107313f24efaba10f6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>fbaaca29932731107313f24efaba10f6</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>f3aaca29932731107313f24efaba10fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <value>If Manager Approved The Expense Request</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=fbaaca29932731107313f24efaba10f6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>fbaaca29932731107313f24efaba10f6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>73aaca29932731107313f24efaba10fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{f7196e08-4b89-427d-bee0-580d023b4ebb.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>fbaaca29932731107313f24efaba10f6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>bfaaca29932731107313f24efaba10f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=fbaaca29932731107313f24efaba10f6"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fbaaca29932731107313f24efaba10f6"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">159a0a29932731107313f24efaba103a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>477a0727-143e-4a87-bfe2-ed87cfa86381</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>ffaaca29932731107313f24efaba10fa</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <ui_id>8c13693e-cbad-470f-84c5-23f8f0a71d66</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ffaaca29932731107313f24efaba10fa"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>ffaaca29932731107313f24efaba10fa</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>7faaca29932731107313f24efaba10fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <value>If Finance Dept Approved</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ffaaca29932731107313f24efaba10fa"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>ffaaca29932731107313f24efaba10fa</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>fbaaca29932731107313f24efaba10fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{e4ab9e17-2b21-4b2b-a8fd-cc5070e2d63f.approval_state}}=approved^{{635d64e8-38b0-4be9-bbde-fb139094f92f.record.state}}=13</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>ffaaca29932731107313f24efaba10fa</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>3baaca29932731107313f24efaba10fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ffaaca29932731107313f24efaba10fa"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ffaaca29932731107313f24efaba10fa"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=23aaca29932731107313f24efaba10d0"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=23aaca29932731107313f24efaba10d0"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_23aaca29932731107313f24efaba10d0^sys_idNOT INbfaaca29932731107313f24efaba10ef,fbaaca29932731107313f24efaba10e7"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_23aaca29932731107313f24efaba10d0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>bfaaca29932731107313f24efaba10ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Report" source="x_1288340_exp_rep">21effda993e331107313f24efaba10cd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_23aaca29932731107313f24efaba10d0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:06</sys_created_on>
+        <sys_id>fbaaca29932731107313f24efaba10e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Report" source="x_1288340_exp_rep">21effda993e331107313f24efaba10cd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:53:06</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_23aaca29932731107313f24efaba10d0"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_23aaca29932731107313f24efaba10d0"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_23aaca29932731107313f24efaba10d0"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>e3088a25932731107313f24efaba100e</sys_id>
+        <latest_snapshot>23aaca29932731107313f24efaba10d0</latest_snapshot>
+        <compiler_build>glide-utah-12-21-2022__patch7a-09-28-2023_10-10-2023_1258.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e3088a25932731107313f24efaba100e^sys_idNOT IN84ba0e29932731107313f24efaba109e"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"84ba0e29932731107313f24efaba109e","name":"plan","plan_signature":null}}</plan>
+        <plan_id>e3088a25932731107313f24efaba100e</plan_id>
+        <snapshot>80dec66d932731107313f24efaba103f</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:53:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>84ba0e29932731107313f24efaba109e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 10:10:15</sys_updated_on>
+        <trigger display_value="">c4ba0e29932731107313f24efaba109c</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e3088a25932731107313f24efaba100e"/>
+</record_update>

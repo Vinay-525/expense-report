@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_1288340_exp_rep_expense_report_req_item">x_1288340_exp_rep_expense_report_req_item</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>EXPR</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 09:10:53</sys_created_on>
+        <sys_id>21018e2d93e331107313f24efaba101b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EXPR</sys_name>
+        <sys_package display_value="Expense Report" source="x_1288340_exp_rep">21effda993e331107313f24efaba10cd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_update_name>sys_number_21018e2d93e331107313f24efaba101b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 09:10:53</sys_updated_on>
+    </sys_number>
+</record_update>
