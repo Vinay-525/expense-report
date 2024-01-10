@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">7951762193e731107313f24efaba1014</sp_column>
+        <sp_widget display_value="Todos Requested Item Approval">7e258e3a531130107eb7ddeeff7b124e</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 06:02:07</sys_created_on>
+        <sys_id>85c54787936331107313f24efaba106a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Report" source="x_1288340_exp_rep">21effda993e331107313f24efaba10cd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_update_name>sp_instance_85c54787936331107313f24efaba106a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 06:02:07</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=85c54787936331107313f24efaba106a"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Expense Report">21effda993e331107313f24efaba10cd</application>
+        <file_path/>
+        <instance_id>e67e6ef2db0a39504162684e13961994</instance_id>
+        <instance_name>dev194783</instance_name>
+        <name>sp_instance_85c54787936331107313f24efaba106a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="2">7951762193e731107313f24efaba1014</sp_column><sp_widget display_value="Todos Requested Item Approval">7e258e3a531130107eb7ddeeff7b124e</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-10 06:02:07</sys_created_on><sys_id>85c54787936331107313f24efaba106a</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Expense Report" source="x_1288340_exp_rep">21effda993e331107313f24efaba10cd</sys_package><sys_policy/><sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope><sys_update_name>sp_instance_85c54787936331107313f24efaba106a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-10 06:02:07</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=85c54787936331107313f24efaba106a"/></record_update>]]></payload>
+        <payload_hash>1683250527</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>9957a116932331107313f24efaba1088</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 06:02:07</sys_created_on>
+        <sys_id>49c54787936331107313f24efaba106c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18cf1f6b8670000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 06:02:07</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>8dc5478745633110962eae18e018796b</update_guid>
+        <update_guid_history>8dc5478745633110962eae18e018796b:1683250527</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">80d54b87936331107313f24efaba1014</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 06:02:18</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>2ba45a3a97dd4343940d343dce713df1</sys_id>
+        <sys_metadata>85c54787936331107313f24efaba106a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Report" source="x_1288340_exp_rep">21effda993e331107313f24efaba10cd</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_scope_delete display_value="">327605076fe14b00a31823b5e73dba40</sys_scope_delete>
+        <sys_update_name>sp_instance_85c54787936331107313f24efaba106a</sys_update_name>
+        <sys_update_version display_value="sp_instance_85c54787936331107313f24efaba106a">49c54787936331107313f24efaba106c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 06:02:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

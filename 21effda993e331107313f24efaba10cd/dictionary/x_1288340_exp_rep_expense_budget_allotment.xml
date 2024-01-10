@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="965ec89393a731107313f24efaba1037" extends="task" label="Expense Budget Allotment" max_length="40" name="x_1288340_exp_rep_expense_budget_allotment" type="collection"/>
+</database>

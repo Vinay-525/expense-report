@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph>check</glyph>
+        <id/>
+        <order>1</order>
+        <roles>manager,approver_user</roles>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="3">f951762193e731107313f24efaba1016</sp_column>
+        <sp_widget display_value="Approvals">f37aa302cb70020000f8d856634c9cfc</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 05:54:26</sys_created_on>
+        <sys_id>70048b07936331107313f24efaba10ee</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Report" source="x_1288340_exp_rep">21effda993e331107313f24efaba10cd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_update_name>sp_instance_70048b07936331107313f24efaba10ee</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 09:08:26</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"portal": {
+		"value": "",
+		"displayValue": ""
+	},
+	"max_number_of_elements_shown_on_the_list": {
+		"value": 7,
+		"displayValue": "7"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=70048b07936331107313f24efaba10ee"/>
+</record_update>

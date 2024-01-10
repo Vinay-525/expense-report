@@ -10,7 +10,7 @@
         <copied_from_name/>
         <description/>
         <internal_name>expensereportflow</internal_name>
-        <label_cache>[{"name":"635d64e8-38b0-4be9-bbde-fb139094f92f.record.state","label":"4 - Update Record➛expense_report_req_item Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"state","choices":[{"used":false,"label":"Requested","image":"","rawLabel":"Requested","selected":false,"missing":false,"reference":false,"value":"10","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Awaiting Approval","image":"","rawLabel":"Awaiting Approval","selected":false,"missing":false,"reference":false,"value":"11","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Awaiting Feedback","image":"","rawLabel":"Awaiting Feedback","selected":false,"missing":false,"reference":false,"value":"12","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Partially Approved","image":"","rawLabel":"Partially Approved","selected":false,"missing":false,"reference":false,"value":"13","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Approved","image":"","rawLabel":"Approved","selected":false,"missing":false,"reference":false,"value":"14","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Closed Complete","image":"","rawLabel":"Closed Complete","selected":false,"missing":false,"reference":false,"value":"3","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Rejected","image":"","rawLabel":"Rejected","selected":false,"missing":false,"reference":false,"value":"16","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}}]},{"name":"e4ab9e17-2b21-4b2b-a8fd-cc5070e2d63f.approval_state","label":"5 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"635d64e8-38b0-4be9-bbde-fb139094f92f.record.assignment_group","label":"4 - Update Record➛expense_report_req_item Record➛Assignment group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"assignment_group"},{"name":"635d64e8-38b0-4be9-bbde-fb139094f92f.record","label":"4 - Update Record➛expense_report_req_item Record","reference":"x_1288340_exp_rep_expense_report_req_item","reference_display":"expense_report_req_item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛expense_report_req_item Record","reference":"x_1288340_exp_rep_expense_report_req_item","reference_display":"expense_report_req_item","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.requested_for.manager","label":"Trigger - Record Created➛expense_report_req_item Record➛Requested For➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record","label":"1 - Update Record➛expense_report_req_item Record","reference":"x_1288340_exp_rep_expense_report_req_item","reference_display":"expense_report_req_item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for","label":"1 - Update Record➛expense_report_req_item Record➛Requested For","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"requested_for"},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for.manager","label":"1 - Update Record➛expense_report_req_item Record➛Requested For➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"f7196e08-4b89-427d-bee0-580d023b4ebb.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <label_cache>[{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for.manager.name","label":"4 - Update Record➛expense_report_req_item Record➛Requested For➛Manager➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for.name","label":"4 - Update Record➛expense_report_req_item Record➛Requested For➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"Created_1.current.description","label":"Trigger - Record Created➛expense_report_req_item Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"description"},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.category","label":"4 - Update Record➛expense_report_req_item Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"category","choices":[{"label":"Food","used":false,"image":"","rawLabel":"Food","selected":false,"missing":false,"reference":false,"value":"food","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"label":"Fuel","used":false,"image":"","rawLabel":"Fuel","selected":false,"missing":false,"reference":false,"value":"fuel","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"label":"Medical","used":false,"image":"","rawLabel":"Medical","selected":false,"missing":false,"reference":false,"value":"medical","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"label":"Miscellaneous","used":false,"image":"","rawLabel":"Miscellaneous","selected":false,"missing":false,"reference":false,"value":"miscellaneous","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"label":"Travel","used":false,"image":"","rawLabel":"Travel","selected":false,"missing":false,"reference":false,"value":"travel","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}}]},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.short_description","label":"4 - Update Record➛expense_report_req_item Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"short_description"},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for.manager.email","label":"4 - Update Record➛expense_report_req_item Record➛Requested For➛Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.requested_for.roles","label":"Trigger - Record Created➛expense_report_req_item Record➛Requested For➛Roles","reference":"","reference_display":"Roles","type":"user_roles","base_type":"user_roles","parent_table_name":"sys_user","column_name":"roles"},{"name":"Created_1.current.active","label":"Trigger - Record Created➛expense_report_req_item Record➛Active","reference":"","reference_display":"Active","type":"boolean","base_type":"boolean","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"active"},{"name":"635d64e8-38b0-4be9-bbde-fb139094f92f.record.state","label":"8 - Update Record➛expense_report_req_item Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"state","choices":[{"label":"Requested","used":false,"image":"","rawLabel":"Requested","selected":false,"missing":false,"reference":false,"value":"10","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"label":"Awaiting Approval","used":false,"image":"","rawLabel":"Awaiting Approval","selected":false,"missing":false,"reference":false,"value":"11","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"label":"Awaiting Feedback","used":false,"image":"","rawLabel":"Awaiting Feedback","selected":false,"missing":false,"reference":false,"value":"12","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"label":"Partially Approved","used":false,"image":"","rawLabel":"Partially Approved","selected":false,"missing":false,"reference":false,"value":"13","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"label":"Approved","used":false,"image":"","rawLabel":"Approved","selected":false,"missing":false,"reference":false,"value":"14","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"label":"Closed Complete","used":false,"image":"","rawLabel":"Closed Complete","selected":false,"missing":false,"reference":false,"value":"3","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"label":"Rejected","used":false,"image":"","rawLabel":"Rejected","selected":false,"missing":false,"reference":false,"value":"16","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}}]},{"name":"e4ab9e17-2b21-4b2b-a8fd-cc5070e2d63f.approval_state","label":"9 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"635d64e8-38b0-4be9-bbde-fb139094f92f.record.assignment_group","label":"8 - Update Record➛expense_report_req_item Record➛Assignment group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"assignment_group"},{"name":"635d64e8-38b0-4be9-bbde-fb139094f92f.record","label":"8 - Update Record➛expense_report_req_item Record","reference":"x_1288340_exp_rep_expense_report_req_item","reference_display":"expense_report_req_item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛expense_report_req_item Record","reference":"x_1288340_exp_rep_expense_report_req_item","reference_display":"expense_report_req_item","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.requested_for.manager","label":"Trigger - Record Created➛expense_report_req_item Record➛Requested For➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record","label":"4 - Update Record➛expense_report_req_item Record","reference":"x_1288340_exp_rep_expense_report_req_item","reference_display":"expense_report_req_item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for","label":"4 - Update Record➛expense_report_req_item Record➛Requested For","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"requested_for"},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for.manager","label":"4 - Update Record➛expense_report_req_item Record➛Requested For➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"f7196e08-4b89-427d-bee0-580d023b4ebb.approval_state","label":"5 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master_snapshot>23aaca29932731107313f24efaba10d0</master_snapshot>
         <name>Expense.Report.Flow</name>
         <natlang/>
@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e3088a25932731107313f24efaba100e</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>Expense.Report.Flow</sys_name>
         <sys_overrides/>
         <sys_package display_value="Expense Report" source="x_1288340_exp_rep">21effda993e331107313f24efaba10cd</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_update_name>sys_hub_flow_e3088a25932731107313f24efaba100e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:16</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:42</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=e3088a25932731107313f24efaba100e"/>
@@ -74,14 +74,14 @@
         <identifier>e3088a25932731107313f24efaba100e</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-01-05 10:10:15</sys_created_on>
-        <sys_id>4f9e826d932731107313f24efaba1007</sys_id>
+        <sys_created_on>2024-01-10 11:02:41</sys_created_on>
+        <sys_id>c49ac49f936731107313f24efaba10c9</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:15</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:41</sys_updated_on>
         <trigger display_value="">c4ba0e29932731107313f24efaba109c</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=e3088a25932731107313f24efaba100e^sys_idNOT IN4f9e826d932731107313f24efaba1007"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=e3088a25932731107313f24efaba100e^sys_idNOT INc49ac49f936731107313f24efaba10c9"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=e3088a25932731107313f24efaba100e^sys_idNOT INe2e94ee5932731107313f24efaba1038"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -92,10 +92,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:49:44</sys_created_on>
         <sys_id>e2e94ee5932731107313f24efaba1038</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:16</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:41</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -208,14 +208,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:49:44</sys_created_on>
         <sys_id>2ae94ee5932731107313f24efaba102f</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:15</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:41</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -291,14 +291,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:49:44</sys_created_on>
         <sys_id>aae94ee5932731107313f24efaba1033</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:15</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:41</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -313,7 +313,130 @@
     </sys_hub_flow_input>
     <sys_hub_flow_output action="delete_multiple" query="model=e3088a25932731107313f24efaba100e"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=e3088a25932731107313f24efaba100e"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=e3088a25932731107313f24efaba100e^sys_idNOT IN2ee94ee5932731107313f24efaba1046,a2e94ee5932731107313f24efaba1053,aae94ee5932731107313f24efaba103e,aae94ee5932731107313f24efaba105b,cd9a0a29932731107313f24efaba1036,d19a0a29932731107313f24efaba104a,d99a0a29932731107313f24efaba1041"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=e3088a25932731107313f24efaba100e^sys_idNOT IN2988c8db936731107313f24efaba10cb,2ee94ee5932731107313f24efaba1046,a2e94ee5932731107313f24efaba1053,aae94ee5932731107313f24efaba103e,aae94ee5932731107313f24efaba105b,cab61fc793a331107313f24efaba104b,cd9a0a29932731107313f24efaba1036,d19a0a29932731107313f24efaba104a,d99a0a29932731107313f24efaba1041"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 10:53:46</sys_created_on>
+        <sys_id>2988c8db936731107313f24efaba10cb</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>adela.cervantsz</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:03:44</sys_updated_on>
+        <ui_id>e03a7855-fb20-40cc-b411-1f8eb6c4e94b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2988c8db936731107313f24efaba10cb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2988c8db936731107313f24efaba10cb</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 10:53:46</sys_created_on>
+        <sys_id>e588c8db936731107313f24efaba10cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 10:53:46</sys_updated_on>
+        <value>x_1288340_exp_rep_expense_report_req_item</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2988c8db936731107313f24efaba10cb</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 10:53:46</sys_created_on>
+        <sys_id>ed88c8db936731107313f24efaba10ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 10:53:46</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2988c8db936731107313f24efaba10cb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>2988c8db936731107313f24efaba10cb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 10:53:46</sys_created_on>
+        <sys_id>2588c8db936731107313f24efaba10ce</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:02:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Hi&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:a7898bcb-08e0-4a6c-b4f4-2d9a6c56f192}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:a7898bcb-08e0-4a6c-b4f4-2d9a6c56f192}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="4 - Update Record &amp;gt; expense_report_req_item Record &amp;gt; Requested For &amp;gt; Manager &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;4 - Update Record&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_a7898bcb-08e0-4a6c-b4f4-2d9a6c56f192" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span style="text-decoration: underline;"&gt;&lt;strong&gt;Required Approval&amp;nbsp;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Category :&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:dfd98e32-8a60-4371-8669-41814e22bcba}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:dfd98e32-8a60-4371-8669-41814e22bcba}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="4 - Update Record &amp;gt; expense_report_req_item Record &amp;gt; Category"&gt;&lt;span class="pill-start"&gt;4 - Update Record&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Category&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_dfd98e32-8a60-4371-8669-41814e22bcba" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Short Description : &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:3c730d5e-7029-459a-babc-1668f778b092}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:3c730d5e-7029-459a-babc-1668f778b092}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="4 - Update Record &amp;gt; expense_report_req_item Record &amp;gt; Short description"&gt;&lt;span class="pill-start"&gt;4 - Update Record&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Short description&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_3c730d5e-7029-459a-babc-1668f778b092" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Description :&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:7bb63ad0-d0ac-42e8-8e26-efa2a11e7568}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:7bb63ad0-d0ac-42e8-8e26-efa2a11e7568}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; expense_report_req_item Record &amp;gt; Description"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Description&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_7bb63ad0-d0ac-42e8-8e26-efa2a11e7568" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Thanks And Regards,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:86dcb513-e068-4ecb-bec9-59d38d2aef26}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:86dcb513-e068-4ecb-bec9-59d38d2aef26}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="4 - Update Record &amp;gt; expense_report_req_item Record &amp;gt; Requested For &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;4 - Update Record&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_86dcb513-e068-4ecb-bec9-59d38d2aef26" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>2988c8db936731107313f24efaba10cb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 10:53:46</sys_created_on>
+        <sys_id>6d88c8db936731107313f24efaba10ce</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:02:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>Expense Request Approval Required | {{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.category}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>2988c8db936731107313f24efaba10cb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 10:53:46</sys_created_on>
+        <sys_id>6d88c8db936731107313f24efaba10cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 10:53:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for.manager.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>2988c8db936731107313f24efaba10cb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 10:53:46</sys_created_on>
+        <sys_id>e588c8db936731107313f24efaba10ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 10:53:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>2988c8db936731107313f24efaba10cb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 10:53:46</sys_created_on>
+        <sys_id>a988c8db936731107313f24efaba10ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 10:53:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2988c8db936731107313f24efaba10cb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2988c8db936731107313f24efaba10cb"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -322,16 +445,16 @@
         <comment/>
         <display_text/>
         <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
-        <order>2</order>
+        <order>5</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:49:44</sys_created_on>
         <sys_id>2ee94ee5932731107313f24efaba1046</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_updated_by>adela.cervantsz</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:11:09</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:03:44</sys_updated_on>
         <ui_id>f7196e08-4b89-427d-bee0-580d023b4ebb</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2ee94ee5932731107313f24efaba1046"/>
@@ -474,16 +597,16 @@
         <comment/>
         <display_text/>
         <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
-        <order>4</order>
+        <order>8</order>
         <parent_ui_id>477a0727-143e-4a87-bfe2-ed87cfa86381</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:49:44</sys_created_on>
         <sys_id>a2e94ee5932731107313f24efaba1053</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_updated_by>adela.cervantsz</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:11:09</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:03:44</sys_updated_on>
         <ui_id>635d64e8-38b0-4be9-bbde-fb139094f92f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a2e94ee5932731107313f24efaba1053"/>
@@ -562,16 +685,16 @@
         <comment/>
         <display_text/>
         <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
-        <order>1</order>
+        <order>4</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:49:44</sys_created_on>
         <sys_id>aae94ee5932731107313f24efaba103e</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_updated_by>adela.cervantsz</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:11:09</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:03:44</sys_updated_on>
         <ui_id>bf9c316a-123b-4cb2-8dc1-a9e61577cb4b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=aae94ee5932731107313f24efaba103e"/>
@@ -636,16 +759,16 @@
         <comment/>
         <display_text/>
         <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
-        <order>11</order>
+        <order>15</order>
         <parent_ui_id>8acedf5a-ce39-4447-9fff-54af4772f27a</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:49:44</sys_created_on>
         <sys_id>aae94ee5932731107313f24efaba105b</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_updated_by>adela.cervantsz</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:11:09</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:03:45</sys_updated_on>
         <ui_id>0f73c0a1-1e07-4776-9d50-59894cbdc4cd</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=aae94ee5932731107313f24efaba105b"/>
@@ -719,21 +842,109 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
+        <order>2</order>
+        <parent_ui_id>660b32ee-5630-44f6-944d-60a521bfc47f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 07:16:11</sys_created_on>
+        <sys_id>cab61fc793a331107313f24efaba104b</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>adela.cervantsz</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:03:44</sys_updated_on>
+        <ui_id>669e0a00-85b9-4abb-96c6-34b5cee83433</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cab61fc793a331107313f24efaba104b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cab61fc793a331107313f24efaba104b</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 07:16:11</sys_created_on>
+        <sys_id>06b61fc793a331107313f24efaba105b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 07:16:11</sys_updated_on>
+        <value>x_1288340_exp_rep_expense_report_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cab61fc793a331107313f24efaba104b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 07:16:11</sys_created_on>
+        <sys_id>cab61fc793a331107313f24efaba105a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 07:20:17</sys_updated_on>
+        <value>state=14^comments=Automatic Approval for Admin^approval=approved</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=cab61fc793a331107313f24efaba104b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>cab61fc793a331107313f24efaba104b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 07:16:11</sys_created_on>
+        <sys_id>4ab61fc793a331107313f24efaba105a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 07:16:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>cab61fc793a331107313f24efaba104b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 07:16:11</sys_created_on>
+        <sys_id>0eb61fc793a331107313f24efaba104d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 07:16:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>cab61fc793a331107313f24efaba104b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 07:16:11</sys_created_on>
+        <sys_id>86b61fc793a331107313f24efaba105a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 07:16:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cab61fc793a331107313f24efaba104b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cab61fc793a331107313f24efaba104b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
         <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
         <action_type_parent/>
         <comment/>
         <display_text/>
         <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
-        <order>5</order>
+        <order>9</order>
         <parent_ui_id>477a0727-143e-4a87-bfe2-ed87cfa86381</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:52:39</sys_created_on>
         <sys_id>cd9a0a29932731107313f24efaba1036</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>48</sys_mod_count>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_updated_by>adela.cervantsz</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:11:09</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:03:44</sys_updated_on>
         <ui_id>e4ab9e17-2b21-4b2b-a8fd-cc5070e2d63f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cd9a0a29932731107313f24efaba1036"/>
@@ -876,16 +1087,16 @@
         <comment/>
         <display_text/>
         <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
-        <order>9</order>
+        <order>13</order>
         <parent_ui_id>4b6b0f32-29f7-4b3d-9209-647e188d128c</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:52:39</sys_created_on>
         <sys_id>d19a0a29932731107313f24efaba104a</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>48</sys_mod_count>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_updated_by>adela.cervantsz</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:11:09</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:03:45</sys_updated_on>
         <ui_id>824a45c6-36f5-43f4-b363-774d102fccdb</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d19a0a29932731107313f24efaba104a"/>
@@ -964,16 +1175,16 @@
         <comment/>
         <display_text/>
         <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
-        <order>7</order>
+        <order>11</order>
         <parent_ui_id>8c13693e-cbad-470f-84c5-23f8f0a71d66</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:52:39</sys_created_on>
         <sys_id>d99a0a29932731107313f24efaba1041</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>48</sys_mod_count>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_updated_by>adela.cervantsz</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:11:09</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:03:44</sys_updated_on>
         <ui_id>e88d9eaa-a39b-4052-90d3-3d8040355983</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d99a0a29932731107313f24efaba1041"/>
@@ -1045,7 +1256,85 @@
     <sys_hub_input_scripts action="delete_multiple" query="instance=d99a0a29932731107313f24efaba1041"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=d99a0a29932731107313f24efaba1041"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=e3088a25932731107313f24efaba100e"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=e3088a25932731107313f24efaba100e^sys_idNOT IN6ae94ee5932731107313f24efaba1055,919a0a29932731107313f24efaba1044,a2e94ee5932731107313f24efaba104b,d99a0a29932731107313f24efaba103a"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=e3088a25932731107313f24efaba100e^sys_idNOT IN42b61fc793a331107313f24efaba105c,4eb61fc793a331107313f24efaba1043,6ae94ee5932731107313f24efaba1055,919a0a29932731107313f24efaba1044,a2e94ee5932731107313f24efaba104b,d99a0a29932731107313f24efaba103a"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8ab61fc793a331107313f24efaba105b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>660b32ee-5630-44f6-944d-60a521bfc47f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 07:16:11</sys_created_on>
+        <sys_id>42b61fc793a331107313f24efaba105c</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:02:41</sys_updated_on>
+        <ui_id>3cb24dd7-6ca4-470e-9c11-584f9fae8b7a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=42b61fc793a331107313f24efaba105c"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=42b61fc793a331107313f24efaba105c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=42b61fc793a331107313f24efaba105c"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8eb61fc793a331107313f24efaba1042</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Expense.Report.Flow">e3088a25932731107313f24efaba100e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 07:16:11</sys_created_on>
+        <sys_id>4eb61fc793a331107313f24efaba1043</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:02:41</sys_updated_on>
+        <ui_id>660b32ee-5630-44f6-944d-60a521bfc47f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4eb61fc793a331107313f24efaba1043"/>
+    <sys_element_mapping action="delete_multiple" query="id=4eb61fc793a331107313f24efaba1043"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>4eb61fc793a331107313f24efaba1043</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 07:16:11</sys_created_on>
+        <sys_id>42b61fc793a331107313f24efaba1047</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 07:16:11</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created_1.current.requested_for.roles}}LIKEadmin</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=4eb61fc793a331107313f24efaba1043"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4eb61fc793a331107313f24efaba1043"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">a2e94ee5932731107313f24efaba1055</block>
         <comment/>
@@ -1059,7 +1348,7 @@
         <flow_variables_assigned/>
         <inputs/>
         <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
-        <order>10</order>
+        <order>14</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id/>
@@ -1067,10 +1356,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:49:44</sys_created_on>
         <sys_id>6ae94ee5932731107313f24efaba1055</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:16</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:42</sys_updated_on>
         <ui_id>8acedf5a-ce39-4447-9fff-54af4772f27a</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1091,7 +1380,7 @@
         <flow_variables_assigned/>
         <inputs/>
         <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
-        <order>8</order>
+        <order>12</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>477a0727-143e-4a87-bfe2-ed87cfa86381</parent_ui_id>
@@ -1099,10 +1388,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:52:39</sys_created_on>
         <sys_id>919a0a29932731107313f24efaba1044</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:16</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:41</sys_updated_on>
         <ui_id>4b6b0f32-29f7-4b3d-9209-647e188d128c</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1124,7 +1413,7 @@
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>3</order>
+        <order>7</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id/>
@@ -1132,10 +1421,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:49:44</sys_created_on>
         <sys_id>a2e94ee5932731107313f24efaba104b</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:16</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:41</sys_updated_on>
         <ui_id>477a0727-143e-4a87-bfe2-ed87cfa86381</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1196,7 +1485,7 @@
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>6</order>
+        <order>10</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>477a0727-143e-4a87-bfe2-ed87cfa86381</parent_ui_id>
@@ -1204,10 +1493,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:52:39</sys_created_on>
         <sys_id>d99a0a29932731107313f24efaba103a</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:16</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:41</sys_updated_on>
         <ui_id>8c13693e-cbad-470f-84c5-23f8f0a71d66</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1254,7 +1543,143 @@
     </sys_element_mapping>
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=d99a0a29932731107313f24efaba103a"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=d99a0a29932731107313f24efaba103a"/>
-    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e3088a25932731107313f24efaba100e"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e3088a25932731107313f24efaba100e^sys_idNOT IN248ac09f936731107313f24efaba105f,608ac09f936731107313f24efaba105f,6c8ac09f936731107313f24efaba105f,a188c8db936731107313f24efaba10fa,a88ac09f936731107313f24efaba105e,a88ac09f936731107313f24efaba105f,a988c8db936731107313f24efaba10f9,e48ac09f936731107313f24efaba105f"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e3088a25932731107313f24efaba100e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.description}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 11:02:26</sys_created_on>
+        <sys_id>248ac09f936731107313f24efaba105f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:02:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7bb63ad0-d0ac-42e8-8e26-efa2a11e7568</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e3088a25932731107313f24efaba100e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.category}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 11:02:26</sys_created_on>
+        <sys_id>608ac09f936731107313f24efaba105f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:02:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>dfd98e32-8a60-4371-8669-41814e22bcba</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e3088a25932731107313f24efaba100e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for.manager.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 11:02:26</sys_created_on>
+        <sys_id>6c8ac09f936731107313f24efaba105f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:02:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>a7898bcb-08e0-4a6c-b4f4-2d9a6c56f192</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e3088a25932731107313f24efaba100e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 10:53:47</sys_created_on>
+        <sys_id>a188c8db936731107313f24efaba10fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 10:53:47</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>eeba18f5-fb63-48dc-a374-1e5c8245179d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e3088a25932731107313f24efaba100e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 11:02:26</sys_created_on>
+        <sys_id>a88ac09f936731107313f24efaba105e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:02:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>25a61d51-b617-47e9-bfdd-e8d61520eea7</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e3088a25932731107313f24efaba100e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for.manager}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 11:02:26</sys_created_on>
+        <sys_id>a88ac09f936731107313f24efaba105f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:02:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b6ad58ef-a42e-4e54-bfe6-9c3b9ed12b7f</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e3088a25932731107313f24efaba100e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.short_description}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 10:53:46</sys_created_on>
+        <sys_id>a988c8db936731107313f24efaba10f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 10:53:46</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>3c730d5e-7029-459a-babc-1668f778b092</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e3088a25932731107313f24efaba100e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 11:02:26</sys_created_on>
+        <sys_id>e48ac09f936731107313f24efaba105f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:02:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>86dcb513-e068-4ecb-bec9-59d38d2aef26</ui_id>
+    </sys_hub_pill_compound>
     <sys_hub_flow_variable action="delete_multiple" query="model=e3088a25932731107313f24efaba100e"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e3088a25932731107313f24efaba100e^sys_idNOT INeae94ee5932731107313f24efaba1032,eee94ee5932731107313f24efaba1035"/>
     <sys_documentation action="INSERT_OR_UPDATE">
@@ -1317,7 +1742,7 @@
         <copied_from_name/>
         <description/>
         <internal_name>expensereportflow</internal_name>
-        <label_cache>[{"name":"635d64e8-38b0-4be9-bbde-fb139094f92f.record.state","label":"4 - Update Record➛expense_report_req_item Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"state","choices":[{"used":false,"label":"Requested","image":"","rawLabel":"Requested","selected":false,"missing":false,"reference":false,"value":"10","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Awaiting Approval","image":"","rawLabel":"Awaiting Approval","selected":false,"missing":false,"reference":false,"value":"11","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Awaiting Feedback","image":"","rawLabel":"Awaiting Feedback","selected":false,"missing":false,"reference":false,"value":"12","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Partially Approved","image":"","rawLabel":"Partially Approved","selected":false,"missing":false,"reference":false,"value":"13","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Approved","image":"","rawLabel":"Approved","selected":false,"missing":false,"reference":false,"value":"14","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Closed Complete","image":"","rawLabel":"Closed Complete","selected":false,"missing":false,"reference":false,"value":"3","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"used":false,"label":"Rejected","image":"","rawLabel":"Rejected","selected":false,"missing":false,"reference":false,"value":"16","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}}]},{"name":"e4ab9e17-2b21-4b2b-a8fd-cc5070e2d63f.approval_state","label":"5 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"635d64e8-38b0-4be9-bbde-fb139094f92f.record.assignment_group","label":"4 - Update Record➛expense_report_req_item Record➛Assignment group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"assignment_group"},{"name":"635d64e8-38b0-4be9-bbde-fb139094f92f.record","label":"4 - Update Record➛expense_report_req_item Record","reference":"x_1288340_exp_rep_expense_report_req_item","reference_display":"expense_report_req_item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛expense_report_req_item Record","reference":"x_1288340_exp_rep_expense_report_req_item","reference_display":"expense_report_req_item","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.requested_for.manager","label":"Trigger - Record Created➛expense_report_req_item Record➛Requested For➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record","label":"1 - Update Record➛expense_report_req_item Record","reference":"x_1288340_exp_rep_expense_report_req_item","reference_display":"expense_report_req_item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for","label":"1 - Update Record➛expense_report_req_item Record➛Requested For","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"requested_for"},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for.manager","label":"1 - Update Record➛expense_report_req_item Record➛Requested For➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"f7196e08-4b89-427d-bee0-580d023b4ebb.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <label_cache>[{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for.manager.name","label":"4 - Update Record➛expense_report_req_item Record➛Requested For➛Manager➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for.name","label":"4 - Update Record➛expense_report_req_item Record➛Requested For➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"Created_1.current.description","label":"Trigger - Record Created➛expense_report_req_item Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"description"},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.category","label":"4 - Update Record➛expense_report_req_item Record➛Category","reference":"","reference_display":"Category","type":"choice","base_type":"choice","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"category","choices":[{"label":"Food","used":false,"image":"","rawLabel":"Food","selected":false,"missing":false,"reference":false,"value":"food","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"label":"Fuel","used":false,"image":"","rawLabel":"Fuel","selected":false,"missing":false,"reference":false,"value":"fuel","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"label":"Medical","used":false,"image":"","rawLabel":"Medical","selected":false,"missing":false,"reference":false,"value":"medical","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"label":"Miscellaneous","used":false,"image":"","rawLabel":"Miscellaneous","selected":false,"missing":false,"reference":false,"value":"miscellaneous","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"label":"Travel","used":false,"image":"","rawLabel":"Travel","selected":false,"missing":false,"reference":false,"value":"travel","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}}]},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.short_description","label":"4 - Update Record➛expense_report_req_item Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"short_description"},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for.manager.email","label":"4 - Update Record➛expense_report_req_item Record➛Requested For➛Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.requested_for.roles","label":"Trigger - Record Created➛expense_report_req_item Record➛Requested For➛Roles","reference":"","reference_display":"Roles","type":"user_roles","base_type":"user_roles","parent_table_name":"sys_user","column_name":"roles"},{"name":"Created_1.current.active","label":"Trigger - Record Created➛expense_report_req_item Record➛Active","reference":"","reference_display":"Active","type":"boolean","base_type":"boolean","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"active"},{"name":"635d64e8-38b0-4be9-bbde-fb139094f92f.record.state","label":"8 - Update Record➛expense_report_req_item Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"state","choices":[{"label":"Requested","used":false,"image":"","rawLabel":"Requested","selected":false,"missing":false,"reference":false,"value":"10","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"label":"Awaiting Approval","used":false,"image":"","rawLabel":"Awaiting Approval","selected":false,"missing":false,"reference":false,"value":"11","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"label":"Awaiting Feedback","used":false,"image":"","rawLabel":"Awaiting Feedback","selected":false,"missing":false,"reference":false,"value":"12","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"label":"Partially Approved","used":false,"image":"","rawLabel":"Partially Approved","selected":false,"missing":false,"reference":false,"value":"13","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"label":"Approved","used":false,"image":"","rawLabel":"Approved","selected":false,"missing":false,"reference":false,"value":"14","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"label":"Closed Complete","used":false,"image":"","rawLabel":"Closed Complete","selected":false,"missing":false,"reference":false,"value":"3","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}},{"label":"Rejected","used":false,"image":"","rawLabel":"Rejected","selected":false,"missing":false,"reference":false,"value":"16","parameters":{"name":"x_1288340_exp_rep_expense_report_req_item"}}]},{"name":"e4ab9e17-2b21-4b2b-a8fd-cc5070e2d63f.approval_state","label":"9 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"635d64e8-38b0-4be9-bbde-fb139094f92f.record.assignment_group","label":"8 - Update Record➛expense_report_req_item Record➛Assignment group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"assignment_group"},{"name":"635d64e8-38b0-4be9-bbde-fb139094f92f.record","label":"8 - Update Record➛expense_report_req_item Record","reference":"x_1288340_exp_rep_expense_report_req_item","reference_display":"expense_report_req_item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛expense_report_req_item Record","reference":"x_1288340_exp_rep_expense_report_req_item","reference_display":"expense_report_req_item","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.requested_for.manager","label":"Trigger - Record Created➛expense_report_req_item Record➛Requested For➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record","label":"4 - Update Record➛expense_report_req_item Record","reference":"x_1288340_exp_rep_expense_report_req_item","reference_display":"expense_report_req_item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for","label":"4 - Update Record➛expense_report_req_item Record➛Requested For","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1288340_exp_rep_expense_report_req_item","column_name":"requested_for"},{"name":"bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for.manager","label":"4 - Update Record➛expense_report_req_item Record➛Requested For➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"f7196e08-4b89-427d-bee0-580d023b4ebb.approval_state","label":"5 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master>true</master>
         <name>Expense.Report.Flow</name>
         <natlang/>
@@ -1334,7 +1759,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>23aaca29932731107313f24efaba10d0</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1342,7 +1767,7 @@
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=23aaca29932731107313f24efaba10d0"/>
@@ -1357,10 +1782,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:53:07</sys_created_on>
         <sys_id>00ba0e29932731107313f24efaba1043</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:15</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:41</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -1473,14 +1898,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:53:06</sys_created_on>
         <sys_id>37aaca29932731107313f24efaba10eb</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:13</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1556,14 +1981,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:53:05</sys_created_on>
         <sys_id>67aaca29932731107313f24efaba10d2</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:13</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1578,7 +2003,7 @@
     </sys_hub_flow_input>
     <sys_hub_flow_output action="delete_multiple" query="model=23aaca29932731107313f24efaba10d0"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=23aaca29932731107313f24efaba10d0"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=23aaca29932731107313f24efaba10d0^sys_idNOT IN00ba0e29932731107313f24efaba1041,33aa0e29932731107313f24efaba1016,33aa0e29932731107313f24efaba1035,33aa0e29932731107313f24efaba103b,3baa0e29932731107313f24efaba1026,f3aa0e29932731107313f24efaba101f,fbaa0e29932731107313f24efaba102d"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=23aaca29932731107313f24efaba10d0^sys_idNOT IN00ba0e29932731107313f24efaba1041,33375b0b93a331107313f24efaba101f,33aa0e29932731107313f24efaba1016,33aa0e29932731107313f24efaba1035,33aa0e29932731107313f24efaba103b,3baa0e29932731107313f24efaba1026,a498ccdb936731107313f24efaba1021,f3aa0e29932731107313f24efaba101f,fbaa0e29932731107313f24efaba102d"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -1587,16 +2012,16 @@
         <comment/>
         <display_text/>
         <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
-        <order>11</order>
+        <order>15</order>
         <parent_ui_id>8acedf5a-ce39-4447-9fff-54af4772f27a</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:53:07</sys_created_on>
         <sys_id>00ba0e29932731107313f24efaba1041</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
         <ui_id>0f73c0a1-1e07-4776-9d50-59894cbdc4cd</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=00ba0e29932731107313f24efaba1041"/>
@@ -1675,16 +2100,104 @@
         <comment/>
         <display_text/>
         <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
-        <order>1</order>
+        <order>2</order>
+        <parent_ui_id>660b32ee-5630-44f6-944d-60a521bfc47f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 07:18:29</sys_created_on>
+        <sys_id>33375b0b93a331107313f24efaba101f</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
+        <ui_id>669e0a00-85b9-4abb-96c6-34b5cee83433</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=33375b0b93a331107313f24efaba101f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>33375b0b93a331107313f24efaba101f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 07:18:29</sys_created_on>
+        <sys_id>77375b0b93a331107313f24efaba1021</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 07:20:29</sys_updated_on>
+        <value>state=14^comments=Automatic Approval for Admin^approval=approved</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>33375b0b93a331107313f24efaba101f</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 07:18:29</sys_created_on>
+        <sys_id>f3375b0b93a331107313f24efaba102e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 07:18:29</sys_updated_on>
+        <value>x_1288340_exp_rep_expense_report_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=33375b0b93a331107313f24efaba101f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>33375b0b93a331107313f24efaba101f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 07:18:29</sys_created_on>
+        <sys_id>f3375b0b93a331107313f24efaba1021</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 07:18:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>33375b0b93a331107313f24efaba101f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 07:18:29</sys_created_on>
+        <sys_id>7b375b0b93a331107313f24efaba1020</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 07:18:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>33375b0b93a331107313f24efaba101f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 07:18:29</sys_created_on>
+        <sys_id>33375b0b93a331107313f24efaba1021</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 07:18:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=33375b0b93a331107313f24efaba101f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=33375b0b93a331107313f24efaba101f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
+        <order>4</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:53:06</sys_created_on>
         <sys_id>33aa0e29932731107313f24efaba1016</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
         <ui_id>bf9c316a-123b-4cb2-8dc1-a9e61577cb4b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=33aa0e29932731107313f24efaba1016"/>
@@ -1749,16 +2262,16 @@
         <comment/>
         <display_text/>
         <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
-        <order>7</order>
+        <order>11</order>
         <parent_ui_id>8c13693e-cbad-470f-84c5-23f8f0a71d66</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:53:06</sys_created_on>
         <sys_id>33aa0e29932731107313f24efaba1035</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
         <ui_id>e88d9eaa-a39b-4052-90d3-3d8040355983</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=33aa0e29932731107313f24efaba1035"/>
@@ -1837,16 +2350,16 @@
         <comment/>
         <display_text/>
         <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
-        <order>9</order>
+        <order>13</order>
         <parent_ui_id>4b6b0f32-29f7-4b3d-9209-647e188d128c</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:53:06</sys_created_on>
         <sys_id>33aa0e29932731107313f24efaba103b</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
         <ui_id>824a45c6-36f5-43f4-b363-774d102fccdb</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=33aa0e29932731107313f24efaba103b"/>
@@ -1925,16 +2438,16 @@
         <comment/>
         <display_text/>
         <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
-        <order>4</order>
+        <order>8</order>
         <parent_ui_id>477a0727-143e-4a87-bfe2-ed87cfa86381</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:53:06</sys_created_on>
         <sys_id>3baa0e29932731107313f24efaba1026</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
         <ui_id>635d64e8-38b0-4be9-bbde-fb139094f92f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3baa0e29932731107313f24efaba1026"/>
@@ -2008,21 +2521,144 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 10:53:59</sys_created_on>
+        <sys_id>a498ccdb936731107313f24efaba1021</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
+        <ui_id>e03a7855-fb20-40cc-b411-1f8eb6c4e94b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a498ccdb936731107313f24efaba1021"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a498ccdb936731107313f24efaba1021</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 10:53:59</sys_created_on>
+        <sys_id>a098ccdb936731107313f24efaba1024</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 10:53:59</sys_updated_on>
+        <value>x_1288340_exp_rep_expense_report_req_item</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a498ccdb936731107313f24efaba1021</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 10:53:59</sys_created_on>
+        <sys_id>ec98ccdb936731107313f24efaba1023</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 10:53:59</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a498ccdb936731107313f24efaba1021"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>a498ccdb936731107313f24efaba1021</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 10:53:59</sys_created_on>
+        <sys_id>2498ccdb936731107313f24efaba1023</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:02:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Hi&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:a7898bcb-08e0-4a6c-b4f4-2d9a6c56f192}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:a7898bcb-08e0-4a6c-b4f4-2d9a6c56f192}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="4 - Update Record &amp;gt; expense_report_req_item Record &amp;gt; Requested For &amp;gt; Manager &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;4 - Update Record&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_a7898bcb-08e0-4a6c-b4f4-2d9a6c56f192" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span style="text-decoration: underline;"&gt;&lt;strong&gt;Required Approval&amp;nbsp;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Category :&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:dfd98e32-8a60-4371-8669-41814e22bcba}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:dfd98e32-8a60-4371-8669-41814e22bcba}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="4 - Update Record &amp;gt; expense_report_req_item Record &amp;gt; Category"&gt;&lt;span class="pill-start"&gt;4 - Update Record&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Category&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_dfd98e32-8a60-4371-8669-41814e22bcba" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Short Description : &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:3c730d5e-7029-459a-babc-1668f778b092}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:3c730d5e-7029-459a-babc-1668f778b092}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="4 - Update Record &amp;gt; expense_report_req_item Record &amp;gt; Short description"&gt;&lt;span class="pill-start"&gt;4 - Update Record&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Short description&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_3c730d5e-7029-459a-babc-1668f778b092" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Description :&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:7bb63ad0-d0ac-42e8-8e26-efa2a11e7568}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:7bb63ad0-d0ac-42e8-8e26-efa2a11e7568}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; expense_report_req_item Record &amp;gt; Description"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Description&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_7bb63ad0-d0ac-42e8-8e26-efa2a11e7568" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Thanks And Regards,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:86dcb513-e068-4ecb-bec9-59d38d2aef26}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:86dcb513-e068-4ecb-bec9-59d38d2aef26}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="4 - Update Record &amp;gt; expense_report_req_item Record &amp;gt; Requested For &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;4 - Update Record&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_86dcb513-e068-4ecb-bec9-59d38d2aef26" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>a498ccdb936731107313f24efaba1021</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 10:53:59</sys_created_on>
+        <sys_id>6c98ccdb936731107313f24efaba1023</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:02:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>Expense Request Approval Required | {{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.category}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>a498ccdb936731107313f24efaba1021</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 10:53:59</sys_created_on>
+        <sys_id>6098ccdb936731107313f24efaba1023</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 10:53:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for.manager.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>a498ccdb936731107313f24efaba1021</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 10:53:59</sys_created_on>
+        <sys_id>e498ccdb936731107313f24efaba1023</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 10:53:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>a498ccdb936731107313f24efaba1021</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 10:53:59</sys_created_on>
+        <sys_id>a898ccdb936731107313f24efaba1023</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 10:53:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a498ccdb936731107313f24efaba1021"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a498ccdb936731107313f24efaba1021"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
         <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
         <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
         <comment/>
         <display_text/>
         <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
-        <order>2</order>
+        <order>5</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:53:06</sys_created_on>
         <sys_id>f3aa0e29932731107313f24efaba101f</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
         <ui_id>f7196e08-4b89-427d-bee0-580d023b4ebb</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f3aa0e29932731107313f24efaba101f"/>
@@ -2165,16 +2801,16 @@
         <comment/>
         <display_text/>
         <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
-        <order>5</order>
+        <order>9</order>
         <parent_ui_id>477a0727-143e-4a87-bfe2-ed87cfa86381</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:53:06</sys_created_on>
         <sys_id>fbaa0e29932731107313f24efaba102d</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
         <ui_id>e4ab9e17-2b21-4b2b-a8fd-cc5070e2d63f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fbaa0e29932731107313f24efaba102d"/>
@@ -2310,7 +2946,53 @@
     <sys_hub_input_scripts action="delete_multiple" query="instance=fbaa0e29932731107313f24efaba102d"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=fbaa0e29932731107313f24efaba102d"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=23aaca29932731107313f24efaba10d0"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=23aaca29932731107313f24efaba10d0^sys_idNOT IN7baaca29932731107313f24efaba10fe,f7aa0e29932731107313f24efaba1001,fbaaca29932731107313f24efaba10f6,ffaaca29932731107313f24efaba10fa"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=23aaca29932731107313f24efaba10d0^sys_idNOT IN48475b0b93a331107313f24efaba1048,7baaca29932731107313f24efaba10fe,88475b0b93a331107313f24efaba104c,f7aa0e29932731107313f24efaba1001,fbaaca29932731107313f24efaba10f6,ffaaca29932731107313f24efaba10fa"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8eb61fc793a331107313f24efaba1042</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 07:18:29</sys_created_on>
+        <sys_id>48475b0b93a331107313f24efaba1048</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
+        <ui_id>660b32ee-5630-44f6-944d-60a521bfc47f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=48475b0b93a331107313f24efaba1048"/>
+    <sys_element_mapping action="delete_multiple" query="id=48475b0b93a331107313f24efaba1048"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>48475b0b93a331107313f24efaba1048</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 07:18:30</sys_created_on>
+        <sys_id>4c475b0b93a331107313f24efaba104b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 07:18:30</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created_1.current.requested_for.roles}}LIKEadmin</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=48475b0b93a331107313f24efaba1048"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=48475b0b93a331107313f24efaba1048"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">d99a0a29932731107313f24efaba1043</block>
         <comment/>
@@ -2324,7 +3006,7 @@
         <flow_variables_assigned/>
         <inputs/>
         <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
-        <order>8</order>
+        <order>12</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>477a0727-143e-4a87-bfe2-ed87cfa86381</parent_ui_id>
@@ -2332,10 +3014,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:53:06</sys_created_on>
         <sys_id>7baaca29932731107313f24efaba10fe</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
         <ui_id>4b6b0f32-29f7-4b3d-9209-647e188d128c</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2343,6 +3025,38 @@
     <sys_variable_value action="delete_multiple" query="document_key=7baaca29932731107313f24efaba10fe"/>
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7baaca29932731107313f24efaba10fe"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=7baaca29932731107313f24efaba10fe"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8ab61fc793a331107313f24efaba105b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Expense.Report.Flow">23aaca29932731107313f24efaba10d0</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>660b32ee-5630-44f6-944d-60a521bfc47f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 07:18:30</sys_created_on>
+        <sys_id>88475b0b93a331107313f24efaba104c</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
+        <ui_id>3cb24dd7-6ca4-470e-9c11-584f9fae8b7a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=88475b0b93a331107313f24efaba104c"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=88475b0b93a331107313f24efaba104c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=88475b0b93a331107313f24efaba104c"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">a2e94ee5932731107313f24efaba1055</block>
         <comment/>
@@ -2356,7 +3070,7 @@
         <flow_variables_assigned/>
         <inputs/>
         <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
-        <order>10</order>
+        <order>14</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id/>
@@ -2364,10 +3078,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:53:06</sys_created_on>
         <sys_id>f7aa0e29932731107313f24efaba1001</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
         <ui_id>8acedf5a-ce39-4447-9fff-54af4772f27a</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2389,7 +3103,7 @@
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>3</order>
+        <order>7</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id/>
@@ -2397,10 +3111,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:53:06</sys_created_on>
         <sys_id>fbaaca29932731107313f24efaba10f6</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
         <ui_id>477a0727-143e-4a87-bfe2-ed87cfa86381</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2461,7 +3175,7 @@
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>6</order>
+        <order>10</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>477a0727-143e-4a87-bfe2-ed87cfa86381</parent_ui_id>
@@ -2469,10 +3183,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:53:06</sys_created_on>
         <sys_id>ffaaca29932731107313f24efaba10fa</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:14</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
         <ui_id>8c13693e-cbad-470f-84c5-23f8f0a71d66</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2519,7 +3233,143 @@
     </sys_element_mapping>
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ffaaca29932731107313f24efaba10fa"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=ffaaca29932731107313f24efaba10fa"/>
-    <sys_hub_pill_compound action="delete_multiple" query="attached_to=23aaca29932731107313f24efaba10d0"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=23aaca29932731107313f24efaba10d0^sys_idNOT IN278ac49f936731107313f24efaba1017,2b8ac49f936731107313f24efaba1017,3498ccdb936731107313f24efaba1091,638ac49f936731107313f24efaba1017,af8ac49f936731107313f24efaba1016,eb8ac49f936731107313f24efaba1016,eb8ac49f936731107313f24efaba1017,f498ccdb936731107313f24efaba1091"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>23aaca29932731107313f24efaba10d0</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 11:02:39</sys_created_on>
+        <sys_id>278ac49f936731107313f24efaba1017</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>25a61d51-b617-47e9-bfdd-e8d61520eea7</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>23aaca29932731107313f24efaba10d0</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for.manager}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 11:02:39</sys_created_on>
+        <sys_id>2b8ac49f936731107313f24efaba1017</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b6ad58ef-a42e-4e54-bfe6-9c3b9ed12b7f</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>23aaca29932731107313f24efaba10d0</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.short_description}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 10:54:00</sys_created_on>
+        <sys_id>3498ccdb936731107313f24efaba1091</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 10:54:00</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>3c730d5e-7029-459a-babc-1668f778b092</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>23aaca29932731107313f24efaba10d0</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for.manager.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 11:02:39</sys_created_on>
+        <sys_id>638ac49f936731107313f24efaba1017</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>a7898bcb-08e0-4a6c-b4f4-2d9a6c56f192</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>23aaca29932731107313f24efaba10d0</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.requested_for.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 11:02:39</sys_created_on>
+        <sys_id>af8ac49f936731107313f24efaba1016</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>86dcb513-e068-4ecb-bec9-59d38d2aef26</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>23aaca29932731107313f24efaba10d0</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record.category}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 11:02:39</sys_created_on>
+        <sys_id>eb8ac49f936731107313f24efaba1016</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>dfd98e32-8a60-4371-8669-41814e22bcba</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>23aaca29932731107313f24efaba10d0</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.description}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 11:02:39</sys_created_on>
+        <sys_id>eb8ac49f936731107313f24efaba1017</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 11:02:39</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7bb63ad0-d0ac-42e8-8e26-efa2a11e7568</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>23aaca29932731107313f24efaba10d0</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{bf9c316a-123b-4cb2-8dc1-a9e61577cb4b.record}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-10 10:54:00</sys_created_on>
+        <sys_id>f498ccdb936731107313f24efaba1091</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-10 10:54:00</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>eeba18f5-fb63-48dc-a374-1e5c8245179d</ui_id>
+    </sys_hub_pill_compound>
     <sys_hub_flow_variable action="delete_multiple" query="model=23aaca29932731107313f24efaba10d0"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_23aaca29932731107313f24efaba10d0^sys_idNOT INbfaaca29932731107313f24efaba10ef,fbaaca29932731107313f24efaba10e7"/>
     <sys_documentation action="INSERT_OR_UPDATE">
@@ -2581,17 +3431,17 @@
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"84ba0e29932731107313f24efaba109e","name":"plan","plan_signature":null}}</plan>
         <plan_id>e3088a25932731107313f24efaba100e</plan_id>
-        <snapshot>80dec66d932731107313f24efaba103f</snapshot>
+        <snapshot>1fca8c9f936731107313f24efaba100d</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-05 09:53:07</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>84ba0e29932731107313f24efaba109e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:10:15</sys_updated_on>
+        <sys_updated_on>2024-01-10 11:02:41</sys_updated_on>
         <trigger display_value="">c4ba0e29932731107313f24efaba109c</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e3088a25932731107313f24efaba100e"/>

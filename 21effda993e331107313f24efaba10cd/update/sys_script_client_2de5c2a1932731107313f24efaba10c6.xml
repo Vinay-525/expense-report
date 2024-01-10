@@ -13,7 +13,7 @@
         <script><![CDATA[function onLoad() {
    //Type appropriate comment here, and begin script below
    var requestedFor = g_form.getValue('requested_for');
-   if(!requestedFor) {
+   if(g_form.isNewRecord()) {
 		g_form.setValue('requested_for', g_user.userID);
    } else {
 		g_form.setValue('requested_for', requestedFor);
@@ -25,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2de5c2a1932731107313f24efaba10c6</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>addLoggedInUserToRequestedFor</sys_name>
         <sys_overrides/>
         <sys_package display_value="Expense Report" source="x_1288340_exp_rep">21effda993e331107313f24efaba10cd</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="Expense Report">21effda993e331107313f24efaba10cd</sys_scope>
         <sys_update_name>sys_script_client_2de5c2a1932731107313f24efaba10c6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:05:01</sys_updated_on>
+        <sys_updated_on>2024-01-10 08:40:15</sys_updated_on>
         <table>x_1288340_exp_rep_expense_report_req_item</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>
